@@ -1,0 +1,78 @@
+﻿
+.negrita{
+    font-weight: bold;
+}
+
+
+td[colspan="2"] {
+    background-color: #234E54;
+}
+td[rowspan="4"] {
+    background-color: #CEA885;
+    
+}
+td[rowspan="2"] {
+    background-color: #234E54;
+}
+td[colspan="3"] {
+    background-color: #ACA759;
+}
+td[rowspan="3"] {
+    background-color: #ACA759;
+}
+td[colspan="4"] {
+    background-color: #CEA885;
+}
+#pregunta1 {
+    color: purple;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#pregunta2 {
+    color: purple;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#pregunta3 {
+    color: purple;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#pregunta3 .negrita{
+    background-color:yellow;
+
+}
+
+#pregunta4 {
+    color: purple;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#pregunta5 {
+    color: purple;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#pregunta6 {
+    color: purple;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+p + p {
+    text-decoration: underline;
+}
+
+.comentarios {
+    font-style: italic;
+    border: thin dotted #AC8159;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.cursiva{
+    font-style:italic;
+}
+
+li >a {
+    background-color: yellow;
+}
+
+body{}

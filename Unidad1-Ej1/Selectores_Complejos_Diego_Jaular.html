@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet href="HojaES_Complejos_Diego_Jaular.css" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Estilos compuestos</title>
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<ul>
+	  <li id="pregunta1">id: Pregunta1- Las combinaciones de 4 celdas con fondo marron, las combinaciones de 3 celdas con fondo amarillento, las combinaciones de 2 celdas con fondo verdoso.</li>
+	</ul>
+	<table width="100%" border="1" align="center">
+	  <tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td rowspan="4">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td rowspan="2">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td rowspan="2">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td rowspan="3">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td colspan="4">&nbsp;</td>
+	  </tr>
+	</table>
+	<p class="comentarios"> En este caso hemos coloreado las etiquetas que tienen el atributo colspan y rowspan igual a 2,3,4. En total seis estilos.</p>
+
+	<ul>
+	  <li id="pregunta2">id: Pregunta2 - Decora los li que corresponden a las preguntas (identificados con pregunta1, pregunta2, ...) con letra Verdana y otro tipo de marcador, deja el resto igual, por ejemplo los siguientes.</li>
+	  <li>Sin id - aaa</li>
+	  <li>Sin id - bbb, <span class="negrita">aquí un texto en negrita que no establece el fondo en amarillo</span></li>
+	  <li>Sin id - ccc</li>
+	</ul>
+	<p class="comentarios">Como las preguntas tienen un id, utilizaremos un estilo para li[id]</p>
+	<ul>
+	  <li id="pregunta3">id: Pregunta3 - Crea un estilo que cuando aparezca un texto en negrita en la pregunta (<span class="negrita">como este</span>) le ponga fondo amarillo.</li>
+	</ul>
+	<p class="comentarios">Utilizamos li[id] clase, es decir, el mismo estilo que en la pregunta anterior pero aplicado a todos los textos en negrita dentro de un li con id.</p>
+	<ul>
+	  <li id="pregunta4">id: Pregunta4 - Crea un estilo que se aplique a los comentarios letra italica y borde punteado (lo aconsejable es una clase)</li>
+	</ul>
+	<p class="sin_recuadro">Los párrafos normales como este no aparecerán dentro del recuadro.</p>
+	<p class="sin_recuadro">Este párrafo sigue al anterior.</p>
+	<ul>
+	  <li id="pregunta5">id: Pregunta5 - Crea un estilo subrayado para los párrafos que siguen a otro párrafo.</li>
+	  <li id="pregunta6">id: Pregunta6 - Pon fondo celeste a los hipervínculos que sean hijos directos de un ítem de lista. Este <a href="#">vinculo</a> sí, pero este que está dentro de <span class="cursiva"><a href="#">una marca de cursiva no</a></span>.</li>
+	</ul>
+</body>
+</html>
