@@ -1,0 +1,50 @@
+﻿body
+{
+}
+#capa1 {
+    color: #F9F6C3;
+    background-color: #789498;
+    border: thin solid #234E54;
+}
+    #capa1 a:hover {
+        background-color: #F9DDC3;
+    }
+
+span.color1 {
+    background-color: #F9DDC3;
+}
+
+#capa2:hover a {
+    background-color: #9786A8;
+}
+
+span.color2 {
+    background-color: #9786A8;
+}
+
+#capa2 {
+    background-color: #5A4074;
+    color: #F9F6C3;
+}
+
+#capa3 {
+    background-color: #895F38;
+}
+    #capa3 a[href="http://www.google.es"]:hover {
+        background-color: #CECA85;
+    }
+
+span.color3 {
+    background-color: #CECA85;
+}
+
+#capa4 {
+    background-color: #376369;
+}
+    #capa4:hover a[href="http://www.madrid.org"]{
+        background-color: #F9F6C3;
+    }
+
+span.color4 {
+    background-color: #F9F6C3;
+}

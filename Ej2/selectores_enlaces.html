@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet href="Estilo_Enlaces_2.css" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Estilos compuestos 2</title>
+	<style type="text/css">
+		/* Incluir los selectores que faltan para lograr los requisitos del enunciado */
+		
+	</style>
+</head>
+
+<body>
+	<p>Crear una capa llamada capa1 dentro de la cual los enlaces sobre los que nos posicionemos <span class="color1">se pongan con este fondo </span>.</p>
+	<div id="capa1">
+	  <p>CAPA1 --- Diferentes enlaces:</p>
+	  <p><a href="http://www.madrid.org">Comunidad de Madrid</a> #capa1 a:hover (es decir, los hipervinculos que estan en la capa1 cuando el ratón se situa en el link)</p>
+	  <p><a href="http://www.google.es">Google</a></p>
+	  <p><a href="http://www.elmundo.es">El mundo</a></p>
+	</div>
+
+	<p>Probar la diferencia con los mismos enlaces fuera de la capa1</p>
+	<p><a href="http://www.madrid.org">Comunidad de Madrid</a> (nada especial, ningun estilo)</p>
+	<p><a href="http://www.google.es">Google</a></p>
+	<p><a href="http://www.elmundo.es">El mundo</a></p>
+	<p>Crear una capa llamada capa2, en la cual cuando el cursor este encima de ella todos sus enlaces <span class="color2">se pongan con este fondo </span></p>
+	<div id="capa2">
+	  <p>CAPA2 --- Diferentes enlaces: #capa2:hover a (al posicionar en la capa2 se ponen en amarillo los a que estan en #capa2)</p>
+	  <p><a href="http://www.madrid.org">Comunidad de Madrid</a></p>
+	  <p><a href="http://www.google.es">Google</a></p>
+	  <p><a href="http://www.elmundo.es">El mundo</a></p>
+	</div>
+	<p>Crear una capa llamada capa3, dentro de la cual habra un hipervinculo a google llamado google que se pondrá <span class="color3">se pongan con este fondo </span>cuando nos posicionemos sobre él.</p>
+	<div id="capa3">
+	  <p>CAPA3 --- Diferentes enlaces:</p>
+	  <p><a href="http://www.madrid.org">Comunidad de Madrid</a></p>
+	  <p><a href="http://www.google.es" id="google">Google</a> #capa3 a[href=&quot;http://www.google.es&quot;]:hover (en la capa3, el hipervinculo a google cuando el ratón esta encima)</p>
+	  <p><a href="http://www.elmundo.es">El mundo</a></p>
+	</div>
+	<p>Crear una capa llamada capa4, en la que al posicionarnos sobre ella, habrá un hipervinculo llamado Comunidad de Madrid que se pondrá <span class="color4"> con este fondo </span>.</p>
+	<div id="capa4">
+	  <p>CAPA4 --- Diferentes enlaces:</p>
+	  <p><a href="http://www.madrid.org" id="madrid">Comunidad de Madrid</a> (#capa4:hover a[href=&quot;http://www.madrid.org&quot;], al posicionar en capa4 el hipervinculo que apunta a Comunidad de Madrid</p>
+	  <p><a href="http://www.google.es">Google</a></p>
+	  <p><a href="http://www.elmundo.es">El mundo</a></p>
+	</div>
+	<p>&nbsp;</p>
+</body>
+</html>
