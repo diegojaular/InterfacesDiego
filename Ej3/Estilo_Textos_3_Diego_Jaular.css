@@ -1,0 +1,43 @@
+﻿body
+{
+}
+table {
+    width: 100%;
+}
+
+p:first-of-type {
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 50px;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    background-color: saddlebrown;
+}
+
+.clase {
+    font-style: italic;
+    color: rebeccapurple;
+}
+
+#consejo {
+    background-color: lightgreen;
+    color: mediumpurple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#idparaestilo {
+    color: white;
+    background-color: mediumpurple;
+    letter-spacing: 3px;
+}
+
+#textolinea {
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    color: mediumpurple;
+    background-color: lightpink;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet href="Estilo_Textos_3.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Estilos para textos</title>
+	<style type="text/css">
+		/* Añadir los estilos necesarios para que la página web se muestre como en la imagen */
+		
+	</style>
+</head>
+
+<body>
+	<h2>Estilos: Trabajando con textos.</h2>
+	<p>Párrafo con estilos que se aplican por ser el primer párrafo del documento. Este párrafo esta en negrita y cursiva y también ha sido indentado. Todo esta realizado desde la hoja de estilos en cascada o CSS.</p>
+	<p id="consejo">Se aconseja el uso de estilos para el diseño de la página, aunque el HTML permite añadir atributos y otras posibilidades para el diseño la tendencia es que acabe utilizandose exclusivamente para los contenidos.</p>
+	<p><span id="textolinea">Estilo en linea (las letras mayúsculas se consiguen con CSS)</span></p>
+	<h3>Estilo para las etiquetas &lt;h3&gt; (afecta a todas las etiquetas &lt;h3&gt;). Solo recomendable para estilos muy genéricos</h3>
+	<p class="clase">Estilo para la clase .clase (se aplica a cualquier etiqueta cuya clase sea establecida a este tipo). Siempre empieza por un punto.</p>
+	<h4 class="clase">Esto es un texto en una etiqueta h4 pero le aplicamos la misma clase que al parrafo anterior (.clase)</h4>
+	<p id="idparaestilo">Estilo a un id (se aplica  al elemento que este identificado con ese id). En una página cada id debe ser exclusivo de una sola etiqueta (lo que hemos hecho en esta página con un id repetido sería incorrecto)</p>
+	<table>
+	  <tr>
+		<td><h3>Texto en h3 (se aplica el estilo definido a nivel de etiqueta)</h3></td>
+		<td class="clase">Texto con la clase definida anteriormente denominada .clase</td>
+		<td id="idparaestilo">Misma id que el estilo anterior (funciona pero no es recomendable)</td>
+	  </tr>
+	</table>
+	<p>&nbsp;</p>
+</body>
+</html>
