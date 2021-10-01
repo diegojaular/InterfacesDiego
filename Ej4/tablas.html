@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Estilo_Tablas_4_Diego_Jaular.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio formatear tabla</title>
+	<style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding:20px 15px 10px 10px;
+			text-align:center;
+            
+		}
+        #abajo {
+            padding-top: 34px;
+            text-align: center;
+        }
+        		       
+        .par:first-of-type >td{
+            background-color: yellow;
+
+        }
+		.par > td{
+			background-color:navajowhite;
+		}
+		tbody >tr> th{
+			background-color:powderblue;
+		}
+		.euro{
+			background-image:url('euro.png');
+			background-position: top left;
+			background-repeat:no-repeat;
+
+		}
+        .dolar {
+            background-image: url('dolar.png');
+            background-position: top left;
+            background-repeat: no-repeat;
+        }
+        .libra {
+            background-image: url('libra.png');
+            background-position: top left;
+            background-repeat: no-repeat;
+        }
+        .yen {
+            background-image: url('yen.png');
+            background-position: top left;
+            background-repeat: no-repeat;
+        }
+        .cabecera {
+            background-image: url('fondo_gris.gif');
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+		/* Añadir estilos de tablas */
+	</style>
+</head>
+<body>
+	<table summary="Tipos de cambio">
+		<thead>
+			<tr class="cabecera">
+				<th scope="col" id="abajo">Cambio</th>
+				<th scope="col" id="abajo">Compra</th>
+				<th scope="col" id="abajo">Venta</th>
+				<th scope="col" id="abajo">Máximo</th>
+				<th scope="col" id="abajo" >Mínimo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="par">
+				<th scope="row" class="euro" id="abajo">Euro/Dolar</th>
+				<td id="abajo">1.2524</td>
+				<td id="abajo">1.2527</td>
+				<td id="abajo" >1.2539</td>
+				<td id="abajo">1.2488</td>
+			</tr>
+			<tr>
+				<th scope="row" class="dolar" id="abajo">Dolar/Yen</th>
+				<td id="abajo">119.01</td>
+				<td id="abajo">119.05</td>
+				<td id="abajo">119.82</td>
+				<td id="abajo">119.82</td>
+			</tr>
+			<tr class="par">
+				<th scope="row" class="libra" id="abajo">Libra/Dolar</th>
+				<td id="abajo">1.8606</td>
+				<td id="abajo">1.8611</td>
+				<td id="abajo">1.8651</td>
+				<td id="abajo">1.8522</td>
+			</tr>
+			<tr>
+				<th scope="row" class="yen" id="abajo">Yen/Euro</th>
+				<td id="abajo">0.6711</td>
+				<td id="abajo">0.6705</td>
+				<td id="abajo">0.6676</td>
+				<td id="abajo">0.6713</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
