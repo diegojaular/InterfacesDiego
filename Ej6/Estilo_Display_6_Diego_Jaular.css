@@ -1,0 +1,41 @@
+﻿body
+{
+}
+* { /* Todos los elementos de la página tienen borde */
+    border: thin solid #442A5D;
+}
+
+#negrita {
+    display: block;
+}
+
+#primeros2 {
+    display: inline;
+}
+
+#ulfalsa {
+    display: list-item;
+    text-indent: 2rem;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#adios {
+    display: none;
+}
+
+#tablafake {
+    display: table-cell;
+}
+
+.bloqueenlinea {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+#desplazau {
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
