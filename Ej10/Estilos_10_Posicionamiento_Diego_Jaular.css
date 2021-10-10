@@ -1,0 +1,99 @@
+﻿body {
+    font-size: 14px;
+}
+
+p:first-of-type {
+    text-align: right;
+}
+
+div.estandar {
+    width: 4.25em;
+    height: 4.25em;
+    padding: 3px;
+}
+
+div#posicionamiento1 {
+    /* Añadir propiedades de posicionamiento */
+    width: 100%;
+    height: 1px;
+    border-top: 1px dashed #CCCCCC;
+    position: absolute;
+    top: 50%
+}
+
+div#posicionamiento2 {
+    /* Añadir propiedades de posicionamiento */
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #CCCCCC;
+    position: absolute;
+    left: 50%;
+}
+
+div#posicionamiento3 {
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#posicionamiento4 {
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+div#posicionamiento5 {
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+div#posicionamiento6 {
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid orange;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+
+div#posicionamiento7 {
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid pink;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+div#posicionamiento8 {
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid lime;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+
+div#posicionamiento9 {
+    /* Añadir propiedades de posicionamiento */
+    border: 2px solid cyan;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
+div#posicionamiento10 {
+    /* Añadir propiedades de posicionamiento */
+    width: 28em;
+    height: 28em;
+    border: 2px solid cyan;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
