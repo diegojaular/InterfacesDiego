@@ -1,0 +1,87 @@
+﻿.tipo {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
+    color: #755E8B;
+}
+/* Cada div define un estilo a nivel de id con el posicionamiento que le corresponde */
+
+#fija {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    width: 7.7rem;
+    height: 3.43rem;
+    background-color: #52797E;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#estatica_exp {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    background-color: #123D43;
+    color: #F9F6C3;
+    width: 18.75rem;
+    margin: 0.6rem;
+}
+
+#estatica_imp {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    background-color: #6E431C;
+    color: #F9DDC3;
+    width: 18.75rem;
+    margin: 0.6rem;
+}
+
+#absoluta1 {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    background-color: #123D43;
+    color: #F9DDC3;
+    height: 6rem;
+    margin: 0.6rem;
+    width: 18.75rem;
+    position: absolute;
+    right: 30px;
+    top: 400px;
+}
+
+#absoluta2 {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    background-color: #755E8B;
+    color: #CECA85;
+    height: 3rem;
+    width: 37rem;
+    margin: 0.6rem;
+    position: absolute;
+    left: 200px;
+}
+
+#absoluta3 {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    background-color: #6E431C;
+    color: #789498;
+    height: 4.375rem;
+    margin: 0.6rem;
+    width: 18.75rem;
+    position: absolute;
+    left: 20px;
+    top: 305px;
+    z-index: 2;
+}
+
+#relativa {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    width: 18.75rem;
+    background-color: #31174A;
+    color: #F9F6C3;
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+
+#sticky {
+    /* Rellenar con propiedades de posicionamiento y precedencia necesarias */
+    width: 18.75rem;
+    background-color: #31174A;
+    color: #F932C3;
+    position: sticky;
+    bottom: 0px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="Estilos_Posicionamiento2_11_Diego_Jaular.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Posicionamiento</title>
+	<style type="text/css">
+		
+		
+	</style>
+</head>
+
+<body>
+	<div id="fija">Fija en la esquina inferior.</div>
+
+	<p>
+		<span class="tipo">Static</span>: es el posicionamiento por defecto,  según el flujo normal del HTML. Por tanto, el valor static no será necesario indicarlo.
+	</p>
+	
+	<div id="estatica_exp">
+		Capa con posicionamiento static
+	</div>
+	
+	<h2>Otra capa static:</h2>
+	
+	<div id="estatica_imp">
+		Esta capa también tiene posicionamiento static aunque no se haya
+		<br/>
+		especificado pues es el valor por defecto.
+	</div>
+	
+	<p>
+		<span class="tipo">Absolute: </span>es el posicionamiento según las distancias especificadas a través de los atributos top, left, right y bottom.
+	</p>
+	
+	<!-- Se utilizan espacios en blanco para cuadrar cada uno de los títulos de las etiquetas p con el flujo de posicionamiento -->
+	<p>&nbsp;</p>
+	
+	<div id="absoluta1">
+		Capa con posicionamiento absolute. Las propiedades bottom y right me permite posicionarla respecto a la esquina inferior derecha.
+	</div>
+	
+	<div id="absoluta2">
+		Capa con posicionamiento absolute y se verá bajo otras capas con z-index mayores.
+	</div>
+	
+	<div id="absoluta3">
+		Capa con posicionamiento absolute. Las propiedades top y left la posicionan respecto a la esquina superior izquierda.
+	</div>
+	
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>
+		<span class="tipo">Relativo:</span> la coloca igual que la estática y le aplica las coordenadas relativas con respecto a su posición 
+	</p>
+	
+	<div id="relativa">
+	  Capa relativa. separada 100 del párrafo  anterior y 40 de la izquierda
+	</div>
+	
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	
+	<p>
+		<span class="tipo">Fixed:</span> igual que el absoluto pero la posición siempre será visible aunque utilicemos las barras de desplazamiento
+	</p>
+	<p>&nbsp;</p>
+	
+	<p>
+		<span class="tipo">Sticky:</span> como el posicionamiento fijo, pero solo cuando el scroll de la página oculta el elemento.
+	</p>
+	<p>&nbsp;</p>
+	<div id="sticky">Sticky, se queda fijo cuando el scroll de la página oculta el elemento.</div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+</body>
+</html>
