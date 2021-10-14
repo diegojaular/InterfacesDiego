@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="superposicion_12_Diego_Jaular.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>NO define posición</h1>
+	
+	<div id="estatico">
+		No define posición, por lo que es static
+	</div>
+		
+	<div id="absoluto1">
+		Capa Absoluta (solo tiene como contenedor a "body") por lo tanto es relativa a body.	
+	</div>
+	
+	<div id="relativo">
+		Capa de posicionamiento relativo. Se coloca según la posición que le tocaría en el flujo HTML.	
+	</div>
+	
+	<div id="fijo">
+		Capa Fija, se coloca como una absoluta
+	</div>
+	
+	<h2>La última en ponerse</h2>
+	
+	<div id="relativo2" >
+		<div>
+			Contenedor relativo, contenido absoluto que se referencia según a su contenedor 
+		</div>
+	</div>	
+</body>
+
+
+</html>
