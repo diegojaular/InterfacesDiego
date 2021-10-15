@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="Estilo_flotantes_13_Diego_Jaular.css" type="text/css" rel="stylesheet" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Elementos flotantes</title>
+	<style type="text/css">
+		/* Añadir las propiedades float y clear para lograr el objetivo del ejercicio */
+	
+	</style>
+
+	</head>
+
+<body>
+	<h3>Para ver como afectan las propiedades float y clear vamos a usar párrafos y imagenes que serán las que estarán a izquierda o derecha. </h3>
+	
+	<p>
+		<img src="css.gif" class="derecha" />
+		<img src="css.gif" class="derecha" />
+		<img src="css.gif" class="derecha" />
+		<img src="css.gif" class="derecha" />
+		<span class="negrita">Primer caso: párrafo normal y etiqueta img a derecha, si ponemos varias etiquetas flotantes estas irán formando una linea hasta que no haya más espacio y saltaran a la siguiente.</span>
+		<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+	</p>
+	
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+
+	<p>
+		<span class="negrita">Segundo caso: párrafo normal y varios elementos flotante a izquierda, que se alinean</span>
+		<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+		<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+	</p>
+
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	<div class="izquierda">Izquierda</div>
+	
+	<p>
+		<span class="negrita">Tercer caso: parrafo normal seguido de ...</span>
+		<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+	</p>
+	<p>
+		<span class="negrita">...  de parrafo normal</span>
+		<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <strong>Este segundo párrafo se ve afectado por los elementos flotantes.</strong>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+	</p>
+	
+	<p>
+		<img src="css.gif" class="derecha estrecho" />
+		<img src="css.gif" class="derecha estrecho" />
+		<img src="css.gif" class="derecha estrecho" />
+		<b>Cuarto caso: El primer parrafo se verá afectado por los elementos flotantes pero el siguiente.....</b>
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+	</p>
+	
+	<p class="parrafonoafectado">
+		<span class="negrita">....parrafo no se vera afectado porque en su propiedad clear indicaremos que no afecten elementos flotantes a izquierda y derecha</span>
+		<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+	</p>
+	
+	<p>
+		<img src="css.gif" class="derechanoafectado" />
+		<img src="css.gif" class="derechanoafectado" />
+		<span>También podemos aplicar el clear al mismo elemento que aplicamos el float, en tal caso los elementos no flotarán al lado sino debajo.</span>
+	</p>
+</body>
+</html>
