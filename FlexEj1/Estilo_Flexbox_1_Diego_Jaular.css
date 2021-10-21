@@ -1,0 +1,35 @@
+﻿#fondodiv {
+    background-color: aquamarine;
+    margin-bottom: 30px;
+}
+
+#ta1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    padding: 0;
+}
+
+#ta2 {
+    display: flex;
+    padding: 0;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+}
+
+li {
+    list-style: none;
+    display: block;
+    width: 18%;
+    text-align: center;
+    line-height: 3em;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 1.5em;
+}
