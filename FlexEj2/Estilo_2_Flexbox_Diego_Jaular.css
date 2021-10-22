@@ -1,0 +1,27 @@
+﻿#divaso {
+    background-color: aquamarine;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+#ulaso {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    list-style: none;
+    height: 31rem;
+    align-items: center;
+}
+
+div ul li {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    justify-content: center;
+    height: 3em;
+    width: 18%;
+    font-weight: bold;
+    color: white;
+}
