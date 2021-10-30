@@ -1,0 +1,105 @@
+.id1{
+    height: 100px;
+    width: 100%;
+    background-color:royalblue;
+    display: flex;
+
+    justify-content: space-between;
+
+
+}
+.id11{
+    height: 100px;
+    width: 100%;
+    background-color:royalblue;
+    display: flex;
+    margin:0;
+    padding: 0;
+    justify-content: space-between;
+
+
+}
+div.id1 div{
+    margin:1em;
+    color: white;
+    display: flex;
+    align-self: center;
+    font-size: 2em;
+
+}
+.ul5{
+
+    margin:1em;
+    width: 15em;
+    background-color: tomato    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+li{
+
+    display: flex;
+    align-self: center;
+    color: white;
+    margin-right: 1em;
+    list-style: none;
+
+}
+.id2{
+    height: 35em;
+    width: 100%;
+
+}
+p{
+    font-weight: bold;
+}
+.id2 > .divi> div{
+    margin: 2em;
+    border-bottom: 2px solid black;
+}
+.divi{
+    float: left;
+    width: 65%;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+}
+.divn{
+
+  background-color: orange;
+  display: flex;
+  width: 30.2%;
+  margin: 0;
+  padding: 0;
+  height: 33em;
+  flex-direction: column;
+
+}
+.cajita{
+
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 80%;
+  height: 40%;
+  background-color: darkorange;
+
+}
+.cajita2{
+  display: flex;
+  background-color: red;
+  width: 50%;
+  height: 50%;
+  color: white;
+}
+.cajita2  ~ .cajita2{
+  margin-left: 50%;
+}
+.ul2{
+  margin:1em;
+  width: 5em;
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
