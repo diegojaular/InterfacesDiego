@@ -1,0 +1,59 @@
+.full{
+  width: 100%;
+  height: 41em;
+  border: 1px solid black;
+}
+.cabecera{
+  margin:1em;
+
+  height: 17%;
+  border: 1px solid black;
+}
+.cuerpo{
+  margin: 1em;
+  height: 50%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.pie{
+  margin:1em;
+  height: 17%;
+  border: 1px solid black;
+}
+.dos{
+  height: 100%;
+  width: 25%;
+
+}
+.caja1{
+  height: 25%;
+  border: 1px solid black;
+  margin: 1em;
+}
+.caja2{
+  height: 60%;
+  border: 1px solid black;
+  margin: 1em;
+}
+.uno{
+  margin: 1em;
+  height: 90%;
+  width: 72%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 1em;
+}
+.cajaf{
+  margin-right: 1em;
+  width: 8em;
+  height: 3em;
+  border: 1px solid blue;
+
+
+
+}
