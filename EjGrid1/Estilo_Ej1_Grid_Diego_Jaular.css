@@ -1,0 +1,21 @@
+.container {
+	height: 25rem;
+	display: grid;
+  gap:1em;
+	grid-template-columns: repeat(2, 1fr 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 2fr;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+.item{
+	background-color: yellow;
+	border: 1px solid black;
+    border-radius: 3px;
+    font-size: 2em;
+}
+.item:nth-child(odd) {
+	background-color: grey;
+}
