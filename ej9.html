@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #caja1 {
+			 width: 10em; 
+			 height: 9em; 
+			 background-color:white;
+			 border: solid 1px black; 
+			 margin: 7px; 
+			 float: left;			 
+		}
+		div:nth-last-child(2){
+			display:none;
+		}
+		div:nth-child(6){
+			display:none;
+		}
+		div:nth-child(4){
+			display:none;
+		}
+		/*div:nth-child(2){
+			display:none;
+		}*/
+		#caja4 {
+			 width: 10em; 
+			 height: 9em; 
+			 background-color:green;
+			 border: solid 1px black; 
+			 margin: 7px; 
+			 clear:both;
+			 float: left;			 
+		}
+		#caja5 {
+			 width: 10em; 
+			 height: 9em; 
+			 background-color:green;
+			 border: solid 1px black; 
+			 margin: 7px; 
+			 
+			 float: left;			 
+		}
+	
+		#caja7 {
+			 width: 10em; 
+			 height: 9em; 
+			 background-color:blue;
+			 border: solid 1px black; 
+			 margin: 7px; 
+			 
+			 float: right;			 
+		}
+        #caja8 {
+            width: 10em;
+            height: 9em;
+            background-color: blue;
+            border: solid 1px black;
+            margin: 7px;
+            clear: both;
+            float: left;
+        }
+        #caja9 {
+            width: 10em;
+            height: 9em;
+            background-color: blue;
+            border: solid 1px black;
+            margin: 7px;
+			clear:both;
+            float: left;
+        }
+		
+		
+        
+        #contenido { 
+			/* Ancho de 43.75em y centrado en el navegador */ 
+			width: 33em; 	
+			height: 30em;		
+			margin: auto; 
+			padding: 5px;
+			/* Overflow es necesario, ya que como float va aparte del flujo de posicionamiento, no tiene en cuenta el contenido para
+			calcular el alto del contenedor */
+			overflow: auto;			
+			/* Borde solid y fondo gris claro */ 
+			border: solid 1px black; 
+			background-color: white;			
+		} 
+    </style>
+</head>
+
+<body>
+    <p></p>
+	<div id="contenido">
+		<div id="caja1" class="texto_caja"> Caja 1 </div>
+		<div id="caja1" class="texto_caja"> Caja 2 </div>
+		<div id="caja1" class="texto_caja"> Caja 3 </div>
+		<div id="caja4" class="texto_caja"> Caja 4 </div>
+		<div id="caja5" class="texto_caja"> Caja 5 </div>
+		<div id="caja5" class="texto_caja"> Caja 6 </div>
+		<div id="caja7" class="texto_caja"> Caja 7 </div>
+		<div id="caja8" class="texto_caja"> Caja 8 </div>
+		<div id="caja9" class="texto_caja"> Caja 9 </div>
+	</div>
+</body>
+
+</html> 
