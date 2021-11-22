@@ -1,0 +1,236 @@
+.maestro{
+  height: 40em;
+  width: 100%;
+}
+.cabecera{
+  height: 22%;
+  background-color:lightblue;
+  background-image: linear-gradient(to right, #17a2b7 60%, aquamarine);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0em 0.3em black;
+}
+/* me supuse que la parte izquierda de la cabecera era una foto asique
+busce una foto de la tierra y no encontre ningun png ni ninguna foto relativamente
+pequeña, podia ajustarlas un poco pero quedaba muy mal asique decidi tomar una captura de
+la plantilla y ponerla*/
+.foto{
+  width: 25%;
+  background-image: url('eco2.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.texto1{
+  align-self: flex-end;
+  font-family: Arial, Helvetica;
+  font-weight: bold;
+}
+ul{
+  display:flex;
+  list-style: none;
+  width: 24em;
+  height: 88%;
+  justify-content: flex-end;
+  margin-left: 1em;
+  align-content: flex-end;
+}
+/* he estado probando para hacer mas amplia la celda de los "lis", ni con gap ni jugando con el
+ancho supe hacerla mas amplia*/
+li{
+
+  margin-top: 6.6em;
+  display: flex;
+  align-content: flex-end;
+  height: 1.2em;
+  width: 8em;
+  border-left: 1px solid blue;
+}
+.cuerpo{
+  margin-top: 0.2em;
+  height: 48%;
+  background-image: url('fondoazul.jpg');
+  border: 1px solid black;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.caja1{
+  border-radius: 8px;
+  width: 12em;
+  height: 80%;
+  border: 1px solid blue;
+  overflow: auto;
+}
+.parte{
+
+  color: blue;
+  display: flex;
+  font-family: papyrus;
+  text-shadow: 2px 2px;
+  height: 3em;
+  border: 1px solid blue;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+}
+.parte2{
+    border-radius: 8px;
+  background-color: white;
+  opacity: 0.6;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* no entiendo porque no se me aplica el color blanco de fondo de las cajitas con el texto,
+no se porque se queda aplicado el fondo de anterior y el que pongo no se superpones */
+.parte3{
+  box-sizing: border-box;
+  margin-top: 1em;
+  margin-left: 10%;
+  border: 1px solid blue;
+  width: 80%;
+  height: 7em;
+  background-color: white;
+  opacity: 1;
+    border-radius: 8px;
+
+
+}
+#t{
+  font-family:sans-serif;
+  margin-top: 0.2em;
+  text-align: center;
+  text-shadow: 0px 0px;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+p{
+  font-family:sans-serif;
+  font-size: 14px;
+  text-shadow: 0px 0px;
+  text-align: center;
+}
+/* Intento copiar los estilos de la caja1 a la caja2 para luego
+modificarlos y que sea mas comodo y no se porque no se copia la caja igual
+asique los voy a ir copiando 1 por 1 :(   */
+.caja2{
+    border-radius: 8px;
+  width: 12em;
+  height: 80%;
+  border: 1px solid yellow;
+}
+.parteamarilla{
+
+  color: darkorange;
+  /* lo pongo naranja porque si no, no se lee bien*/
+  display: flex;
+  font-family: papyrus;
+  text-shadow: 2px 2px;
+  height: 3em;
+  border: 1px solid yellow;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+}
+.parte2amarilla{
+
+  background-color: white;
+  opacity: 0.6;
+  height: 79%;
+  display: flex;
+  flex-direction: column;
+}
+.parte3amarilla{
+    border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 1em;
+  margin-left: 10%;
+  border: 1px solid yellow;
+  width: 80%;
+  height: 10em;
+  background-color: white;
+  opacity: 1;
+}
+
+.caja3{
+    border-radius: 8px;
+  width: 12em;
+  height: 80%;
+  border: 1px solid green;
+  overflow: auto;
+}
+.parteverde{
+
+  color: green;
+  display: flex;
+  font-family: papyrus;
+  text-shadow: 2px 2px;
+  height: 3em;
+  border: 1px solid green;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+}
+.parte3verde{
+  box-sizing: border-box;
+  margin-top: 1em;
+  margin-left: 10%;
+  border: 1px solid green;
+  width: 80%;
+  height: 7em;
+  background-color: white;
+  opacity: 1;
+    border-radius: 8px;
+
+
+}
+/* respecto al fondo del pie intente lo que me dijiste del opacity pero no hubo manera,
+cree un contenedor para el cuerpo y el pie y me daba problemas, luego probe con otro contenedor
+encima del del pie y tambien, y para una vez que funcionaba el opacity se aplicaba sobre la foto
+y el color no se veia :(*/
+.pie{
+  height: 24%;
+  border: 1px solid black;
+    background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+}
+.piearriba{
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+  justify-content: space-around;
+  box-shadow: 0em 0.2em grey;
+}
+.muchotexto{
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  height: 2%;
+  width: 100%;
+
+}
+.muchotexto > p:nth-child(1){
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+.muchotexto > p{
+  height: 15%;
+}
+.pieabajo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  color: white;
+
+}
