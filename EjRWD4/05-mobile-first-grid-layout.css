@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div.container{
+  margin: 0 auto;
+  font-size: 16px;
+  max-width: 1024px;
+	display: grid;
+	grid-template-areas: "nav nav"
+												"article article"
+												"aside aside";
+}
+
+
+div.container nav {
+  width: 100%;
+  background-color: green;
+  padding: 1em;
+  box-sizing: border-box;
+  grid-area: nav; /* Importante para resolver el ejercicio */
+}
+
+div.container article {
+  width: 100%;
+  height: 12.5rem;
+  background-color: blue;
+  padding: 1em;
+  box-sizing: border-box;
+  background-image: url(content-is-like-water-1.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: article; /* Importante para resolver el ejercicio */
+}
+
+div.container aside {
+  width: 100%;
+  background-color: red;
+  padding: 1em;
+  font-size: 1em;
+  box-sizing: border-box;
+  grid-area: aside; /* Importante para resolver el ejercicio */
+}
+@media all and (min-width:768px){
+	div.container article {
+    height: 25rem;
+    background-image: url(content-is-like-water-3.jpg);
+  }
+	div.container{
+		grid-template-columns: 7fr 3fr;
+		grid-template-areas: "nav nav"
+													" article aside";
+		align-items:start;
+	}
+}
+@media all and (min-width:1200px){
+	div.container article{
+		height: 33em;
+		background-image: url(content-is-like-water-5.jpg); 
+
+	}
+}
