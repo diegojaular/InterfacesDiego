@@ -1,0 +1,53 @@
+div {
+    box-sizing: border-box;
+}
+.row {
+    border: 10px solid black;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  	gap: 1em;
+  	justify-content: center;
+  }
+
+.element {
+    border: 10px solid green;
+	padding: 0.5em;
+}
+.image {
+    border: 10px solid blue;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.text {
+    border: 10px solid red;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+@media all and (min-width: 768px) {
+    .row {
+		grid-template-columns: repeat(2, 1fr);
+    }
+    .element {
+        color: blue;
+    }
+}
+@media all and (min-width:1024px){
+  .row{
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+  .element{
+    color:green;
+  }
+}
+@media all and (min-width:1200px){
+  .row{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .element{
+    color:red;
+  }
+}
