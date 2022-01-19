@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+
+<!-- Esta animación simula una pelota rodando para mostrar que con pocas propiedades
+	 se pueden llevar a cabo efectos atractivos para el usuario.
+
+	 La imagen se desplaza y rota en los keyframes con la propiedad transform.
+	 
+	 Además, con animation-direction alternate se ejecuta cada vez en una dirección-->
+
+<style>
+	body {
+		margin:3em 10%; 
+		background:#333;
+	}
+			
+	.ball {				
+		animation-name: ballmove;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;				
+		animation-fill-mode:forwards;
+		animation-direction: alternate;	
+		animation-play-state: paused;
+
+	}
+    .ball:hover {
+        animation-play-state: running;
+    }
+				
+	@keyframes ballmove {
+		0% {transform: translateX(0) rotate(0);}				
+		100% {transform: translateX(450px) rotate(2turn);}
+	}
+
+</style>
+
+</head>
+<body>
+
+<img class="ball" src="images/pelota.png" alt="ball"width="111" height="111" />
+
+</body>
+</html>
