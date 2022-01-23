@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<!-- En muchos navegadores se consigue activar el autoplay junto al atributo muted. En este caso tenemos los botones de debajo para escucharlo -->
+	<audio id="player" autoplay loop preload="auto">
+		<source src="sonidos/Baby.ogg" type="audio/ogg" />
+		<source src="sonidos/Baby.mp3" type="audio/mpeg" />
+		<object type="application/x-shockwave-flash" data="player_mp3_mini.swf" width="200" height="20">
+			<param name="movie" value="player_mp3_mini.swf" />
+			<param name="bgcolor" value="#085c68" />
+			<param name="FlashVars" value="mp3=Baby.mp3" />
+			<embed href="player_mp3_mini.swf" bgcolor="#085c68" width="200"
+				height="20" name="movie" type="application/x-shockwave-flash" flashvars="mp3=Baby.mp3">
+			</embed>
+		</object>
+	</audio>
+
+	<div>
+		<button onclick="document.getElementById('player').play()">Play</button>
+		<button onclick="document.getElementById('player').pause()">Pausa</button>
+		<button onclick="document.getElementById('player').volume+=0.1">+ Volumen</button>
+		<button onclick="document.getElementById('player').volume-=0.1">- Volumen</button>
+	</div>
+
+</body>
+
+</html>
