@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<!-- Para que funcione autoplay es necesario en algunos navegadores el atributo allow="autoplay" y el atributo mute -->
+	<!-- Probar en varios navegadores quitando los atributos mute o allow="autoplay" y observa las diferencias -->
+
+	<!-- En este caso funciona autoplay y mute, pero se crea una playlist con el mismo vídeo y podría aparecer dos veces (en muchos navegadores se ha solucionado) -->
+	<iframe width="420" height="345" src="https://www.youtube.com/embed/3yM5uXp-T_0?playlist=3yM5uXp-T_0&controls=2&loop=1&autoplay=1&mute=1" allow="autoplay"></iframe>
+
+	<!-- En este caso se crea un playlist con un único vídeo. También es necesario mute con autoplay -->
+	<iframe width="420" height="345" src="https://www.youtube.com/embed?listType=playlist&playlist=3yM5uXp-T_0&controls=2&loop=1&autoplay=1&mute=1" allow="autoplay"></iframe>
+
+	<!-- Añadiendo el vídeo a una lista de reproducción real con las mismas propiedades -->
+	<iframe width="420" height="345" src="https://www.youtube.com/embed/videoseries?list=PLJZY3GZmfs1xXm13iBmy1beTOop31uEA3&controls=2&loop=1&autoplay=1&mute=1" allow="autoplay">
+	<!-- he intentado añadir otros videos pero me dice que youtube esta bloqueado, no se si justo eran esos videos o que no estoy sabiendo poner los videos -->
+	</iframe>
+</body>
+</html>
