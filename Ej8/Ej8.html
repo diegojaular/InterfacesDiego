@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<style>
+	#container{
+		width: 1000px;
+		height: 600px;
+		border: 1px solid black;
+		background: url("dvd1.gif") no-repeat left;
+		animation-duration: 6s;
+		animation-iteration-count: infinite;
+		animation-name: Screenshot;
+	}
+
+	@keyframes Screenshot {
+		25% {
+			background-position: top center;
+			background-image: url("dvd2.gif")
+		}
+
+		50% {
+			background-position: right center;
+			background-image: url("dvd3.gif");
+		}
+
+		75% {
+			background-position: bottom center;
+			background-image: url("dvd4.gif");
+		}
+
+		100% {
+			background-position: left center;
+			background-image: url("dvd1.gif");
+		}
+	}
+</style>
+
+</head>
+<body>
+
+<div id="container"></div>
+
+</body>
+</html>
