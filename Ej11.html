@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css" media="screen">
+		#container {
+			border: 1px solid black;
+			width: 40rem; /* Para garantizar el funcionamiento y que todo cuadre damos unidades de medida diferentes a porcentajes */
+			height: 29rem; /* Se cuadra con el tamaño de las cajas: 6*4=24rem + 5rem (de margen) */
+			position: relative;
+			overflow: hidden;
+			margin-bottom: 1em;
+		}
+		.box {
+			width: 6rem;
+			height: 6rem;
+			background-color: red;
+			font-size: 1.5rem;
+			position: absolute;
+			margin: 1rem;
+			transition: 4s all 0.5s ease-in-out;
+			left: 0px; /* Para que funcione hay que inicializar left */
+		}
+		div.box:hover {
+			width: 3rem;
+			height: 3rem;
+			background-color: blue;
+			color: yellow;
+			font-size: 1rem;
+			transform: rotate(270deg);
+		}
+
+		div#ex01 { /* Se cuadra cada valor de top teniendo en cuenta márgenes y el alto de cada componente */
+			top: 0rem;
+		}
+		div#ex02 {
+			top: 7rem;
+		}
+		div#ex03 {
+			top: 14rem;
+		}
+		div#ex04 {
+			top: 21rem;
+		}
+	</style>
+	<script type="text/javascript">
+		/* Se puede automatizar con arrays, variables, etc., pero al ser un ejercicio de prueba se opta por incluir directamente los valores */
+		document.addEventListener("DOMContentLoaded", () => {
+			document.getElementById("desplazar").addEventListener("click", ()=>{
+				// Desplazamos cada una de las cajas
+				document.querySelectorAll(".box").forEach((box)=>{
+					box.style.left = "32rem";  /* Al igual que en las animaciones, no se puede mezclar left con right */
+				});
+
+				/* Ahora cambiamos el orden de 1 con 2 y 3 con 4 */
+				document.getElementById("ex01").style.top = "7rem";
+				document.getElementById("ex02").style.top = "0rem";
+				document.getElementById("ex03").style.top = "21rem";
+				document.getElementById("ex04").style.top = "14rem";
+			});
+
+			document.getElementById("volver").addEventListener("click", ()=>{
+				// Desplazamos cada una de las cajas
+				document.querySelectorAll(".box").forEach((box)=>{
+					box.style.left = "0rem";  /* Al igual que en las animaciones, no se puede mezclar left con right */
+				});
+
+				/* Ahora cambiamos el orden de 1 con 2 y 3 con 4 */
+				document.getElementById("ex01").style.top = "0rem";
+				document.getElementById("ex02").style.top = "7rem";
+				document.getElementById("ex03").style.top = "14rem";
+				document.getElementById("ex04").style.top = "21rem";
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="ex01" class="box">Caja 1</div>
+		<div id="ex02" class="box">Caja 2</div>
+		<div id="ex03" class="box">Caja 3</div>
+		<div id="ex04" class="box">Caja 4</div>
+	</div>
+
+	<button id="desplazar">Desplazar a la derecha e intercalar</button>
+	<button id="volver">Volver a la posición inicial</button>
+</body>
+</html>
