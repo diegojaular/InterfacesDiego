@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="Ejercicio 9.css" rel="stylesheet" type="text/css">
+  <<style media="screen">
+    .giratorio {
+    	width: 80px;
+    	height: 80px;
+    	animation-duration: 4s;
+    	animation-delay: 2s;
+    	animation-fill-mode: backwards;
+      /* Para que el texto está en el estado inicial durante dos segundos antes de empezar */
+    	animation-timing-function: linear;
+    	animation-name: MiAnimacion;
+    	/*No hace falta forwards porque se posiciona por defecto a la izquierda */
+    }
+
+    @keyframes MiAnimacion {
+    	from {
+    		margin-left: 90%;
+    		transform: rotate(0deg);
+    	}
+    	to {
+    		margin-left:0%;
+    		transform: rotate(360deg);
+    	}
+    }
+
+  </style>
+</head>
+<body>
+	<h1 class="giratorio">Rotando</h1>
+</body>
+</html>
