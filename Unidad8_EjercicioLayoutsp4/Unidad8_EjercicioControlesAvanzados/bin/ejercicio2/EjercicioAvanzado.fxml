@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Shuffle">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/suffle.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Clear">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <Menu mnemonicParsing="false" text="Picture Effect">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Sepia Tone" />
+                        <MenuItem mnemonicParsing="false" text="Glow" />
+                        <MenuItem mnemonicParsing="false" text="Shadow" />
+                    </items>
+                  </Menu>
+                  <MenuItem disable="true" mnemonicParsing="false" text="No Effects" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <CheckMenuItem mnemonicParsing="false" text="Title" />
+                  <RadioMenuItem mnemonicParsing="false" selected="true" text="Binomial name">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Name" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <CheckMenuItem mnemonicParsing="false" text="Picture" />
+                  <RadioMenuItem mnemonicParsing="false" text="Description" toggleGroup="$Name" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane prefHeight="375.0" prefWidth="168.0" side="LEFT" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab disable="true" text="New">
+               <tooltip>
+                  <Tooltip text="Elemento deshabilitado" />
+               </tooltip>
+          </Tab>
+          <Tab text="Rectangle">
+               <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane hmax="2.0" layoutX="186.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" vmax="2.0" AnchorPane.topAnchor="88.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#011e28" height="400.0" stroke="#c8e40e" strokeType="INSIDE" strokeWidth="4.0" width="300.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Copy image" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
